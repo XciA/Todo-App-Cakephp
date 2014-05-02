@@ -19,7 +19,7 @@ Groups
 
 #Setup
 Create a local host setup in Windows or Linux 
-Mysql > Create a database 
+Mysql > Create a database name 'todo'*
       > Create a table name 'tasks following this table description
     CREATE TABLE tasks (
     id int(10) unsigned NOT NULL auto_increment,
@@ -30,6 +30,9 @@ Mysql > Create a database
     modified datetime default NULL,
     PRIMARY KEY (id)
                     );
+* Using a different database name
+  Goto app/Config/database.php 
+  give the new database name.
 
 #All done 
 
