@@ -41,5 +41,8 @@ $(document).ready(function() {
                         var html = template(data['Task']);
                         $('.overlay_content').append(html);
                     }
+$('.flash_close').on('click',function(){
+    $('#flashMessage').fadeOut();
+});
 });
 

@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <?php echo $this->Session->flash(); ?>
+                <?php echo $this->Session->flash();?>
                 </body>
                 </html>
 

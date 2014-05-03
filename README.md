@@ -19,7 +19,7 @@ Groups
 
 #Setup
 Create a local host setup in Windows or Linux 
-Mysql > Create a database name 'todo'*
+Mysql > Create a database name 'todo' *
       > Create a table name 'tasks following this table description
     CREATE TABLE tasks (
     id int(10) unsigned NOT NULL auto_increment,

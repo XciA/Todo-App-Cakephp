@@ -215,7 +215,7 @@ header{
 .Highest{background:#f2dede;}
 .wrapper{position: relative;color:#000;margin: 0 auto;position: relative;top:10%;}
 #flashMessage{position: fixed;
-              bottom: 10px;
+              bottom: 50px;
               background: #FDFAFA;
               font-weight: normal;
               color: #fff;
@@ -225,7 +225,19 @@ header{
               color: #646464;
               text-shadow: none;
               font-size: 14px;
-              padding: 20px 10px;}
+              -moz-box-shadow: 1px 1px 4px #CED1D0;
+              -webkit-box-shadow: 1px 1px 4px #CED1D0;
+              box-shadow: 1px 1px 4px #CED1D0;
+              padding: 20px 20px 10px 20px;}
+.flash_close{
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    height: 2px;
+    right: 6px;
+    cursor: pointer;
+    color: #cc3333;
+}
 .overlay_content legend{border:0;}
 .overlay_content form .checkbox input {
     margin: 0;

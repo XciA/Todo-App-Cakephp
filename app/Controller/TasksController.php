@@ -42,7 +42,7 @@ class TasksController extends AppController {
             //when called it creates a new data
             $this->Task->create();
             if ($this->Task->save($this->data)) {
-                $this->Session->setFlash('The Task has been saved');
+                $this->Session->setFlash('The Task has been saved !!','flash_notification');
                 $this->redirect(array('action' => 'index'), null, true);
             } else {
                 $this->Session->setFlash('Task not saved. Try again.');
@@ -59,7 +59,7 @@ class TasksController extends AppController {
     //save the edited data
     function save_edit() {
         if ($this->Task->save($this->data)) {
-            $this->Session->setFlash('The Task has been saved');
+            $this->Session->setFlash('The Task has been saved','flash_notification');
             $this->redirect(array('action' => 'index'), null, true);
         } else {
             $this->Session->setFlash('The Task could not be saved.
